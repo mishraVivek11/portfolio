@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;   
+}
+
+a{
+    text-decoration: none;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #edf1fd;
+    position: relative;
+    background-image: url(../assets/bg2.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: calibri;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: #f4f7ff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
+    z-index: 1;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li a{
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.lang{
+    color:#292929;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: #6c707c;
+    /* color: #a89bf3 !important; */
+    font-family: Poppins;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.menu li a:hover{
+    /* background-color:#292929; */
+    color: #a89bf3 !important;
+    font-weight: 700;
+    transition: all ease 0.4s;
+    opacity: 1;
+}
+
+.menu li a:active{
+    color:red !important;
+    font-weight: 700;
+    opacity: 1;
+}
+
+
+.intro{
+    font-family: calibri;
+    width: 500px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%,-50%);
+}
+
+.intro p:nth-child(1),
+.intro .details{
+    color: #6c707c;
+    font-size: 16px;
+}
+
+.intro h1{
+    font-family: Poppins;
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 2px;
+    color: #292929;
+}
+
+.cv-btn{
+    width: 180px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    color:#ffffff;
+    border-radius: 20px;
+}
+
+.cv-btn:hover{
+    background-color: #131313;
+    transition: all ease 0.5s;
+}
+
+.social{
+     position: absolute;
+     right: 50px;
+    bottom: 50px;
+    display: flex;
+}
+
+.social a{
+    margin: 6px 12px;
+}
+
+.social i{
+    color: rgba(18,17,17,0.1);
+}
+
+.social a:hover i{
+    color: #8979e0;
+    transition: all ease 0.3s;
+
+}
+
+.arrow{
+    position: absolute;
+    bottom: 50px;
+    
+    left:50%;
+   display: flex;
+}
+
+.arrow a{
+    margin: 6px 12px;
+}
+
+.arrow i{
+    color: rgba(18,17,17,0.1);
+}
+
+#about{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+}
+
+.about-text{
+    font-family: calibri;
+    width: 50%;
+}
+
+.about-text h1{
+    font-size: 3rem;
+    /* color: #a89bf3 !important; */
+    color:#ffffff;
+    /* color:#17d1ac; */
+}
+.about-text h2{
+    font-size: 2rem;
+    /* color:#ffffff; */
+    color: #a89bf3 !important;
+    font-weight: 400;
+}
+.about-text h1,h2{
+    margin: 0px;
+    padding: 0px;
+}
+
+.about-text p{
+    font-size: 1.2rem;
+    color:rgba(251,251,251,0.90);
+}
+
+.about-model{   
+    margin-right: 20%;
+}
+.about-model img{
+    height: 200px;
+    widows: 200px;
+    border-radius: 10%;    
+}
+
+#skills{
+    width: 100%;
+    height: 100vh;
+    font-family: calibri;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;    
+    padding: 50px 5% 0px 5%;
+}
+
+.s-heading{
+    text-align: center;
+}
+.s-heading h1{
+    color: #ffffff;
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.s-heading h2{
+    font-size: 2rem;
+    /* color:#ffffff; */
+    color: #a89bf3 !important;
+    font-weight: 400;
+}
+
+.s-heading p{
+    color:rgba(249,249,249,0.90);
+    font-size: 1.2rem;
+}
+
+
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px 5% 0px 5%; 
+}
+
+
+
+.contact-details {
+    margin-right:20px;
+    font-family: calibri;
+}
+
+
+.contact-details h1{
+    font-size: 3rem;
+    /* color:#ffffff; */
+    color:#ffffff;   
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.contact-details h2{
+    font-size: 1.5rem;
+    /* color:#ffffff; */
+    color: #a89bf3 !important;
+    font-weight: 300;
+    margin-top:10px;
+}
+
+.contact-details i{
+    /* color:#ffffff; */
+    color:#ffffff;   
+    margin-top:10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-s {
+    font-family: calibri;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8px;
+}
+
+.contact-s a{
+    margin: 6px 12px;
+    margin-left: 0;
+    margin-right: 20px;
+    opacity: 0.6;
+}
+
+.contact-s i{
+    color:#ffffff;   
+}
+
+.contact-s a:hover i{
+    color: #8979e0;
+    transition: all ease 0.3s;
+
+}
+
+.social a:hover i{
+    color: #8979e0;
+    transition: all ease 0.3s;
+
+}
+
+
+
+.skill-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    color:#ffffff;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.skill-item:hover{
+    background-color: #131313;
+    transition: all ease 0.5s;
+}
+
+.wrapper{
+    margin-top: 10px;
+    padding-top: 10px;
+    display: grid;
+    align-items: center;
+    
+}
+
+
+.wrapper ul{
+    list-style: none;   
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper li{
+    display: inline;
+    background-color: #292929;
+    color:#ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    margin: 7px;
+    text-indent: -1em;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.gallery p{
+    width:100%;
+}
