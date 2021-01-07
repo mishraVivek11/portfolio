@@ -84,11 +84,7 @@ nav{
     opacity: 1;
 }
 
-.menu li a:active{
-    color:red !important;
-    font-weight: 700;
-    opacity: 1;
-}
+
 
 
 .intro{
@@ -159,9 +155,6 @@ nav{
    display: flex;
 }
 
-.arrow a{
-    margin: 6px 12px;
-}
 
 .arrow i{
     color: rgba(18,17,17,0.1);
@@ -190,7 +183,6 @@ nav{
 }
 .about-text h2{
     font-size: 2rem;
-    /* color:#ffffff; */
     color: #a89bf3 !important;
     font-weight: 400;
 }
@@ -283,7 +275,6 @@ nav{
 }
 
 .contact-details i{
-    /* color:#ffffff; */
     color:#ffffff;   
     margin-top:10px;
     align-items: center;
@@ -321,7 +312,6 @@ nav{
 }
 
 
-
 .skill-item{
     display: flex;
     justify-content: center;
@@ -341,7 +331,8 @@ nav{
 .wrapper{
     margin-top: 10px;
     padding-top: 10px;
-    display: grid;
+    display: flex;
+    justify-content: center;
     align-items: center;
     
 }
@@ -349,32 +340,28 @@ nav{
 
 .wrapper ul{
     list-style: none;   
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
 .wrapper li{
-    display: inline;
+    display: -webkit-inline-flex;
     background-color: #292929;
     color:#ffffff;
+    margin-right: 10px;
+    margin-top: 20px;
     border-radius: 20px;
     padding: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
     align-items: center;
-    margin: 7px;
-    text-indent: -1em;
+    cursor: context-menu;
+
 }
 
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-
-.gallery p{
-    width:100%;
+.wrapper li:hover{
+    background-color: #8979e0;
+    transition: all ease 0.3s;
 }
